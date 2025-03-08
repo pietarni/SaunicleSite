@@ -1,42 +1,199 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* Reset and base styles */
+body, html, .App {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header CTA button (if you use one in a header) */
+.cta-header {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hero section with full-screen video */
+.hero {
+  position: relative;
+  width: 100vw;    /* Full viewport width */
+  height: 100vh;   /* Full viewport height */
+  overflow: hidden;
+}
+
+/* The video itself */
+.hero-video,
+.trailer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay for text and form on video */
+.overlay,
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Or use 0.5 in hero-overlay if you need more contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-overlay {
+  /* If you prefer a slightly darker overlay on the hero */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+
+.hero-overlay p {
+  font-size: 1.25rem;
+  margin: 0 0 2rem;
+}
+
+/* Logo adjustments */
+.game-logo {
+  width: 1000px;        /* Adjusted to a reasonable width */
+  max-width: 80%;      /* Prevent oversizing on mobile */
+  margin-bottom: 1rem; /* Space between logo and tagline */
+  object-fit: contain;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.7));
+}
+
+/* Buttons */
+
+
+/* 🔥 Wishlist Button - Make it POP */
+.steam-wishlist-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #1b2838, #2a475e);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgba(255, 255, 255, 1);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.steam-wishlist-button:hover {
+  background: linear-gradient(45deg, #2a475e, #4b6a8f);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* 🔥 Steam Icon */
+.steam-icon {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+}
+
+
+
+/* Signup form */
+.signup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.signup input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.signup button {
+  padding: 0.75rem 1rem;
+  background-color: #ff4500;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.signup button:hover {
+  background-color: #ff652f;
+}
+
+/* Features section */
+.features {
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feature-item {
+  text-align: center;
+  max-width: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.feature-item img {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 0.1rem;
 }
 
-.card {
-  padding: 2em;
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+/* Social icons container */
+.social {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
+
+/* Social links (if using text links, they can stay) */
+.social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Social icons styling (if using images or SVGs) */
+.social-icon {
+  width: 64px;
+  height: 64px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: invert(53%) sepia(80%) saturate(3125%) hue-rotate(300deg);
+}
+
+.social-icon:hover {
+  transform: scale(2);
+  filter: invert(53%) sepia(80%) saturate(3125%) hue-rotate(100deg);
+}
+

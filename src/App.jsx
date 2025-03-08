@@ -1,35 +1,80 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function SocialIcons() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="social">
+      <a href="https://youtube.com/yourgame" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/youtube.svg" alt="YouTube" className="social-icon" />
+      </a>
+      <a href="https://discord.gg/Dv3HeqxeKx" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/discord.svg" alt="Discord" className="social-icon" />
+      </a>
+      <a href="https://instagram.com/saunacart1" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/instagram.svg" alt="Instagram" className="social-icon" />
+      </a>
+      <a href="https://store.steampowered.com/app/3408560" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/steam.svg" alt="Steam" className="social-icon" />
+      </a>
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <div className="App">
+      {/* Hero Section */}
+      <section className="hero">
+        <video className="hero-video" autoPlay muted loop playsInline>
+          <source src="/assets/trailer2.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="hero-overlay">
+          <img src="/assets/logo.png" alt="Game Logo" className="game-logo" />
+          <p>The Ultimate Sauna Adventure Awaits in July 2025</p>
+          
+          <form className="signup">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Notify Me</button>
+          </form>
+          <a
+            href="https://store.steampowered.com/app/3408560"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="steam-wishlist-button"
+          >
+            <img src="/assets/steam.svg" alt="Steam Logo" className="steam-icon" />
+            Wishlist now on Steam!
+          </a>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <h3>Why You'll Love It</h3>
+        <div className="feature-list">
+          <div className="feature-item">
+            <img src="/assets/map_icon.png" alt="Explore Finland" />
+            <p>Explore Finland</p>
+          </div>
+          <div className="feature-item">
+            <img src="/assets/loyly_icon.png" alt="Throw Löyly" />
+            <p>Throw Löyly</p>
+          </div>
+          <div className="feature-item">
+            <img src="/assets/sun_icon.png" alt="Save the world" />
+            <p>Save the world</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <p>&copy; 2025 Multimodular Games. All rights reserved.</p>
+        <SocialIcons />
+      </footer>
+    </div>
+  );
+}
+
+export default App;
