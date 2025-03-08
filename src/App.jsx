@@ -4,7 +4,7 @@ import './App.css';
 function SocialIcons() {
   return (
     <div className="social">
-      <a href="https://youtube.com/yourgame" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.youtube.com/@saunagamedev?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
         <img src="/assets/youtube.svg" alt="YouTube" className="social-icon" />
       </a>
       <a href="https://discord.gg/Dv3HeqxeKx" target="_blank" rel="noopener noreferrer">
