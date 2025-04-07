@@ -82,7 +82,7 @@ function App() {
       {/* Footer */}
       <footer>
         <p>All made by a single man</p>
-        
+        <p>Join the community on:</p>
         <SocialIcons />
       </footer>
     </div>
