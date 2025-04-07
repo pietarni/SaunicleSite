@@ -26,13 +26,23 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <video className="hero-video" autoPlay muted loop playsInline>
-          <source src="/assets/trailer2.mp4" type="video/mp4" />
+          <source src="/assets/newvid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="hero-overlay">
           <img src="/assets/logo.png" alt="Game Logo" className="game-logo" />
           <p>The Ultimate Sauna Adventure Awaits in July 2025</p>
-          
+          <a
+            href="https://store.steampowered.com/app/3408560"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="steam-wishlist-button"
+          >
+            <img src="/assets/steam.svg" alt="Steam Logo" className="steam-icon" />
+            Wishlist now on Steam!
+          </a>
+          or:
+          <br/>
           <form 
             className="signup" 
             action="https://docs.google.com/forms/d/e/1FAIpQLSdbdMOjKnhpxkqrzI8L7uJcjgQXELkX7MgIKFJZMstamiC5dg/viewform" 
@@ -44,15 +54,7 @@ function App() {
           </form>
 
 
-          <a
-            href="https://store.steampowered.com/app/3408560"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="steam-wishlist-button"
-          >
-            <img src="/assets/steam.svg" alt="Steam Logo" className="steam-icon" />
-            Wishlist now on Steam!
-          </a>
+          
         </div>
       </section>
 
@@ -62,21 +64,24 @@ function App() {
         <div className="feature-list">
           <div className="feature-item">
             <img src="/assets/map_icon.png" alt="Explore Finland" />
-            <p>Explore Finland</p>
+            <p>12 Real Sauna Levels</p>
           </div>
           <div className="feature-item">
             <img src="/assets/loyly_icon.png" alt="Throw Löyly" />
-            <p>Throw Löyly</p>
+            <p>Innovative löyly mechanics</p>
           </div>
           <div className="feature-item">
             <img src="/assets/sun_icon.png" alt="Save the world" />
-            <p>Save the world</p>
+            <p>Your mission: Save the world</p>
           </div>
+          
         </div>
+        
       </section>
-
+      
       {/* Footer */}
       <footer>
+        <p>All made by a single man</p>
         <p>&copy; 2025 Multimodular Games. All rights reserved.</p>
         <SocialIcons />
       </footer>
