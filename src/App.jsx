@@ -82,7 +82,7 @@ function App() {
       {/* Footer */}
       <footer>
         <p>All made by a single man</p>
-        <p>&copy; 2025 Multimodular Games. All rights reserved.</p>
+        
         <SocialIcons />
       </footer>
     </div>
