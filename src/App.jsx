@@ -4,7 +4,7 @@ import './App.css';
 function SocialIcons() {
   return (
     <div className="social">
-      <a href="https://www.youtube.com/@saunagamedev?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.youtube.com/@sillythingsxyz?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
         <img src="/assets/youtube.svg" alt="YouTube" className="social-icon" />
       </a>
       <a href="https://discord.gg/Dv3HeqxeKx" target="_blank" rel="noopener noreferrer">
@@ -15,6 +15,9 @@ function SocialIcons() {
       </a>
       <a href="https://store.steampowered.com/app/3408560" target="_blank" rel="noopener noreferrer">
         <img src="/assets/steam.svg" alt="Steam" className="social-icon" />
+      </a>
+      <a href="https://www.tiktok.com/@sillythingsxyz" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/tiktok.svg" alt="TikTok" className="social-icon" />
       </a>
     </div>
   );
