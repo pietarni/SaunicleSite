@@ -33,7 +33,7 @@ function App() {
           Your browser does not support the video tag.
         </video>
         <div className="hero-overlay">
-          <img src="/assets/logo.png" alt="Game Logo" className="game-logo" />
+          <img src="/assets/saunageddonlogo.png" alt="Game Logo" className="game-logo" />
           <p>The Ultimate Sauna Adventure Awaits in July 2025</p>
           <a
             href="https://store.steampowered.com/app/3408560"
